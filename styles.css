@@ -1,0 +1,36 @@
+h1 {
+    color: pink;
+  font-size: 70px;
+  background-color: grey;
+  }
+  del {
+    color: green;
+  font-size: 40px;
+  background-color: orange;
+
+  }
+
+  ul {
+list-style: none; 
+padding: 0; 
+margin: 0; 
+}
+
+
+li {
+display: inline; 
+margin-right: 20px; 
+}
+
+
+a {
+text-decoration: none; 
+color: #333; 
+font-weight: bold; 
+transition: color 0.3s ease; 
+}
+
+
+a:hover {
+color: #ff6600; 
+}
