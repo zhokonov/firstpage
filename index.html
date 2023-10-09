@@ -1,38 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>My first page</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кухня здоровья</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f5f2;
+        }
+        
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('back.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: #ca0edb;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        
+        .navbar {
+            background-color: rgba(251, 244, 255, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ad06b3;
+        }
+        
+        .cta-button {
+            background-color: #e100ff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        
+        .hidden-block {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .hidden-block p {
+            font-size: 16px;
+            color: #333333;
+        }
+    </style>
 </head>
 <body>
-  <h1> My first page </h1>
-  
-  <section id="1link">
     
-</section>
-<section id="2link">
+    <div class="navbar">
+        <div class="logo">Кухня здоровья</div>
+        <a href="#hidden-block-toggle" id="toggle-link" class="cta-button">Подробнее о нас</a>
+    </div>
     
-</section>
-<section id="3link">
     
-</section>
+    <div class="hero">
+        <h1>Доставка полезного питания</h1>
+        <p>Заботимся о вашем здоровье!</p>
+        <a href="#" class="cta-button">Заказать сейчас</a>
+        
+       
+<div id="hidden-block-toggle" class="hidden-block">
+  <h2>О нас</h2>
+  <p>Мы - Кухня здоровья, команда профессиональных поваров и диетологов, преданная идее сделать ваше питание здоровым и вкусным.</p>
+  <p>С самого начала нашей истории мы сосредотачивались на качестве и свежести наших ингредиентов. Мы убеждены, что только натуральные и полезные продукты могут обеспечить вам максимальное благополучие.</p>
 
-<ul>
-  <li><a href="#1link">1link</a></li>
-  <li><a href="#2link">2link</a></li>
-  <li><a href="#3link">3link</a></li>
-</ul>
-  <b> Something interesting</b>
-  <del> Somthing not interesting</del>
-  <mark>something important</mark>
-  <p> <hr width= 10000>big text big text big text big text big text big text big text 
-  big text big text big text big text big text big text big text big text big text big 
-  text big text big text big text big text big text big text big text big text big text 
-  big text big text big text big text big text big text big text big text big text big 
-  text big text big text big text big text big text big text big text big text big text big text big text big text</p>
-  
-  <button> press me</button>
+  <h2>Наши продукты</h2>
+  <p>Мы гордимся тем, что предлагаем разнообразное меню с блюдами для всех диетических потребностей. Наши блюда богаты питательными веществами, витаминами и микроэлементами, которые важны для вашего здоровья.</p>
+  <p>Мы также уделяем внимание вкусу. Мы считаем, что здоровое питание не должно быть скучным, поэтому мы создаем блюда, которые радуют ваши вкусовые рецепторы.</p>
+
+  <h2>Как сделать заказ</h2>
+  <p>Заказать у нас легко! Выберите блюда из нашего меню, укажите количество порций и оформите заказ. Мы предоставляем удобные способы оплаты и гарантируем быструю доставку в любой район города.</p>
+
+  <h2>Отзывы клиентов</h2>
+  <p>Наши клиенты довольны качеством нашей еды и обслуживанием. Вот что они говорят:</p>
+  <blockquote>
+      "Я полностью изменил свой образ жизни, благодаря еде от Кухни здоровья. Они действительно заботятся о здоровье своих клиентов." - Анна
+  </blockquote>
+  <blockquote>
+      "Не могу даже представить, как я раньше обходился без них. Вкусно и полезно!" - Иван
+  </blockquote>
+
+  <h2>Контакты</h2>
+  <p>Если у вас есть вопросы или вам нужна помощь, свяжитесь с нами:</p>
+  <p>Телефон: +123456789</p>
+  <p>Email: info@kitchenhealth.com</p>
+
+  <h2>Специальные предложения</h2>
+  <p>Мы постоянно радуем наших клиентов скидками и акциями. Узнайте больше на нашей странице акций.</p>
+</div>
+
+    </div>
+
+    <script>
+        
+        const toggleLink = document.getElementById("toggle-link");
+        const hiddenBlock = document.getElementById("hidden-block-toggle");
+        
+        toggleLink.addEventListener("click", function() {
+            if (hiddenBlock.style.display === "none" || hiddenBlock.style.display === "") {
+                hiddenBlock.style.display = "block";
+            } else {
+                hiddenBlock.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
+
