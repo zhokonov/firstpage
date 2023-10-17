@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кухня здоровья</title>
     <style>
-       
+        
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f5f2;
         }
-        
+
         
         .hero {
             display: flex;
@@ -20,23 +19,23 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('https://productcenter.ru/images/608377-kukhnia-zdorovia-540x480.jpg'); 
+            background-image: url('https://c.pxhere.com/photos/71/9a/food_snacks_cooking_pork_meat_seasoning_wine_side_dishes_ssam-626452.jpg!d');
             background-size: cover;
             background-position: center;
             color: #ca0edb;
             text-align: center;
         }
-        
+
         .hero h1 {
             font-size: 36px;
             margin-bottom: 20px;
         }
-        
+
         .hero p {
             font-size: 18px;
             margin-bottom: 30px;
         }
-        
+
         
         .navbar {
             background-color: rgba(251, 244, 255, 0.5);
@@ -48,13 +47,13 @@
             width: 100%;
             top: 0;
         }
-        
+
         .logo {
             font-size: 24px;
             font-weight: bold;
             color: #ad06b3;
         }
-        
+
         .cta-button {
             background-color: #e100ff;
             color: #fff;
@@ -62,8 +61,9 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-left: 10px;
         }
-        
+
         
         .hidden-block {
             display: none;
@@ -71,10 +71,42 @@
             padding: 20px;
             border-radius: 10px;
         }
-        
+
         .hidden-block p {
             font-size: 16px;
             color: #333333;
+        }
+
+        
+        .new-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url('alternate-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+        }
+        .new-section:nth-child(even) {
+            background-color: #c7a8e6; 
+        }
+
+        .new-section:nth-child(odd) {
+            background-color: #caf3ca; 
+        }
+
+        .new-section .section-text {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+        }
+
+        .new-section img {
+            flex: 1;
+            max-width: 50%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -82,18 +114,17 @@
     
     <div class="navbar">
         <div class="logo">Кухня здоровья</div>
-        <a href="#hidden-block-toggle" id="toggle-link" class="cta-button">Подробнее о нас</a>
+        <a href="#hidden-block-toggle" id="toggle-link" class="cta-button">О нас</a>
     </div>
-    
+
     
     <div class="hero">
         <h1>Доставка полезного питания</h1>
         <p>Заботимся о вашем здоровье!</p>
         <a href="#" class="cta-button">Заказать сейчас</a>
-        
-       
-<div id="hidden-block-toggle" class="hidden-block">
-  <h2>О нас</h2>
+
+        <div id="hidden-block-toggle" class="hidden-block">
+            <h2>О нас</h2>
   <p>Мы - Кухня здоровья, команда профессиональных поваров и диетологов, преданная идее сделать ваше питание здоровым и вкусным.</p>
   <p>С самого начала нашей истории мы сосредотачивались на качестве и свежести наших ингредиентов. Мы убеждены, что только натуральные и полезные продукты могут обеспечить вам максимальное благополучие.</p>
 
@@ -120,15 +151,32 @@
 
   <h2>Специальные предложения</h2>
   <p>Мы постоянно радуем наших клиентов скидками и акциями. Узнайте больше на нашей странице акций.</p>
-</div>
-
+        </div>
     </div>
 
+    <div class="new-section">
+        <img src="https://static.tildacdn.com/tild3938-3735-4737-b335-323662643835/photo.jpg" alt="Image 1">
+        <div class="section-text">
+            <h2 style="color: #8a2be2;">Свежие салаты для вашего здоровья</h2>
+        <p style="color: #8a2be2;">Наши салаты - это не просто блюда, это источник здоровья и энергии. Мы гордимся тем, что предлагаем разнообразные салаты, приготовленные с использованием только свежих и натуральных ингредиентов.</p>
+        <p style="color: #8a2be2;">Каждый салат богат витаминами, минералами и волокнами, которые полезны для вашего организма. Попробуйте наши разноцветные салаты и наслаждайтесь вкусом, сохраняя свое здоровье.</p>
+        </div>
+    </div>
+
+    <div class="new-section">
+        <div class="section-text">
+            <h2 style="color: #8a2be2;">Искусство сладостей</h2>
+        <p style="color: #8a2be2;">Наши десерты - это настоящее искусство сладостей. Мы создаем удивительные десерты, которые пленят ваши вкусовые рецепторы и развеселят ваш день. Каждый десерт - это маленький кусочек радости, который мы создаем с любовью и страстью к кулинарии.</p>
+        <p style="color: #8a2be2;">От шоколадных тортов до фруктовых пирогов, у нас есть десерт для каждого вкуса. Разрешите себе немного сладкого нашими изысканными десертами.</p>
+        </div>
+        <img src="https://static.tildacdn.com/tild3335-6364-4133-b431-323932613831/photo.jpg" alt="Image 2">
+    </div>
+
+    
     <script>
-        
         const toggleLink = document.getElementById("toggle-link");
         const hiddenBlock = document.getElementById("hidden-block-toggle");
-        
+
         toggleLink.addEventListener("click", function() {
             if (hiddenBlock.style.display === "none" || hiddenBlock.style.display === "") {
                 hiddenBlock.style.display = "block";
