@@ -27,8 +27,9 @@
         }
 
         .hero h1 {
-            font-size: 36px;
+            font-size: 56px;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
@@ -42,7 +43,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             position: absolute;
             width: 100%;
             top: 0;
@@ -55,6 +58,7 @@
         }
 
         .cta-button {
+            
             background-color: #e100ff;
             color: #fff;
             padding: 10px 20px;
@@ -62,15 +66,19 @@
             border-radius: 5px;
             font-weight: bold;
             margin-left: 10px;
+            font-size: 30px;
         }
 
         
         .hidden-block {
-            display: none;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333333;
+}
 
         .hidden-block p {
             font-size: 16px;
@@ -101,13 +109,39 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9); 
             border-radius: 10px;
+            font-size: 45px;
+            margin-left: 30px;
+            margin-right: 30px;
         }
 
         .new-section img {
             flex: 1;
             max-width: 50%;
             border-radius: 10px;
+
         }
+
+        .click-text {
+        font-size: 20px; 
+        color: #fff; 
+        background-color: #e100ff; 
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px; 
+    }
+
+    
+    .cta-button {
+        background-color: #e100ff;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+         
+    }
     </style>
 </head>
 <body>
@@ -172,7 +206,10 @@
         <img src="https://static.tildacdn.com/tild3335-6364-4133-b431-323932613831/photo.jpg" alt="Image 2">
     </div>
 
-    
+    <div style="text-align: center;"></div>
+        <p class="click-text">Click the link below:</p>
+        <a href="https://github.com/zhokonov/firstpage/blob/main/goals.txt" target="_blank" class="cta-button">goals.txt</a>
+    </div>
     <script>
         const toggleLink = document.getElementById("toggle-link");
         const hiddenBlock = document.getElementById("hidden-block-toggle");
