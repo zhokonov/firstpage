@@ -142,6 +142,51 @@
         display: inline-block;
          
     }
+
+    .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 17px; 
+    right: 20px; 
+}
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #ad06b3;
+            margin: 6px 0;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .burger-menu {
+                display: flex;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .cta-button {
+                margin-top: 10px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+    .cta-button {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
     </style>
 </head>
 <body>
@@ -151,6 +196,11 @@
         <a href="#hidden-block-toggle" id="toggle-link" class="cta-button">О нас</a>
     </div>
 
+    <div class="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     
     <div class="hero">
         <h1>Доставка полезного питания</h1>
@@ -212,17 +262,25 @@
     
     </div>
     <script>
+        
         const toggleLink = document.getElementById("toggle-link");
-        const hiddenBlock = document.getElementById("hidden-block-toggle");
+const hiddenBlock = document.getElementById("hidden-block-toggle");
+const burgerMenu = document.querySelector(".burger-menu");
 
-        toggleLink.addEventListener("click", function() {
-            if (hiddenBlock.style.display === "none" || hiddenBlock.style.display === "") {
-                hiddenBlock.style.display = "block";
-            } else {
-                hiddenBlock.style.display = "none";
-            }
-        });
+toggleLink.addEventListener("click", toggleHiddenBlock);
+burgerMenu.addEventListener("click", toggleHiddenBlock);
+
+document.addEventListener("click", function (event) {
+    if (!event.target.matches('.burger-menu') && !event.target.matches('#toggle-link')) {
+        hiddenBlock.style.display = "none";
+    }
+});
+
+function toggleHiddenBlock() {
+    hiddenBlock.style.display = (hiddenBlock.style.display === "none" || hiddenBlock.style.display === "") ? "block" : "none";
+}
+
+
     </script>
 </body>
 </html>
-
